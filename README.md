@@ -49,6 +49,20 @@ To run this project locally, follow these steps:
 
 Once opened, you can navigate through the sections using the navigation bar at the top. The site provides information about my background, skills, and projects, along with contact details.
 
+Running on VS Code
+To run and debug the project using Visual Studio Code:
+
+Open the project folder in VS Code:
+
+bash
+Copy code
+code .
+Install the Live Server extension from the Extensions Marketplace.
+
+Start the project by right-clicking on the index.html file and selecting Open with Live Server. This will automatically launch the site in your default web browser.
+
+To debug JavaScript, open the Run and Debug panel on the left sidebar, then select Run and Debug, and choose Chrome (or another browser) as your environment. This allows you to set breakpoints and step through your code in real-time.
+
 ## Projects
 
 Here are some recent projects featured on the website:
