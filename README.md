@@ -48,8 +48,7 @@ To run this project locally, follow these steps:
 ## Usage
 
 Once opened, you can navigate through the sections using the navigation bar at the top. The site provides information about my background, skills, and projects, along with contact details.
-
-Running on VS Code
+## Running on VS Code:
 To run and debug the project using Visual Studio Code:
 
 Open the project folder in VS Code:
