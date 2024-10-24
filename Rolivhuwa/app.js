@@ -12,4 +12,10 @@ function toggleInfo(infoId) {
       element.style.display = "block"; // Show the link
     }
   }
-  
+// JavaScript to toggle the navbar visibility
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
