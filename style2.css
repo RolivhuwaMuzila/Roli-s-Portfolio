@@ -728,84 +728,155 @@ p {
 }
 /* End  Media Query For Desktop */
 
-    /* Chatbot Icon */
-        #chatbot-icon {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: crimson;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+   /* Chatbot Icon */
+#chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: crimson;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
 
-            cursor: pointer;
-            font-size: 24px;
-            color: white;
-        }
+/* Chatbot Window */
+#chatbot-window {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+}
 
-        /* Chatbot Window */
-        #chatbot-window {
-            position: fixed;
-            bottom: 80px;
-            right: 20px;
-            width: 300px;
-            max-height: 400px;
-            background-color: white;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            display: none;
-            flex-direction: column;
-        }
+/* Chatbot Header */
+#chatbot-header {
+    background-color: pink;
+    color: white;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        /* Chatbot Header */
-        #chatbot-header {
-            background-color: pink;
-            color: white;
-            padding: 10px;
-            border-radius: 8px 8px 0 0;
-            font-size: 16px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+/* Chat Content */
+#chat-content {
+    padding: 10px;
+    overflow-y: auto;
+    flex-grow: 1;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-        /* Chat Content */
-        #chat-content {
-            padding: 10px;
-            overflow-y: auto;
-            flex-grow: 1;
-            font-size: 14px;
-        }
+/* Chat Input Area */
+#chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
 
-        /* Chat Input Area */
+#message {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+}
 
-        #chat-input {
-            display: flex;
-            border-top: 1px solid #ccc;
-        }
+#send-btn {
+    padding: 10px;
+    background-color: pink;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
 
-        #message {
-            flex: 1;
-            padding: 10px;
-            border: none;
-            font-size: 14px;
-        }
+/* Utility Buttons */
+#brightness-btn, #delete-btn {
+    cursor: pointer;
+    margin-left: 5px;
+}
 
-        #send-btn {
-            padding: 10px;
-            background-color: pink;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 14px;
-        }
+/* Message Bubbles */
+.message {
+    max-width: 70%;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-        /* Utility Buttons */
-        #brightness-btn, #delete-btn {
-            cursor: pointer;
-            margin-left: 5px;
-        }
+/* Bot message bubble on the left with avatar */
+.bot-message {
+    background-color: #f1f0f0;
+    color: black;
+    align-self: flex-start;
+    border-radius: 20px 20px 20px 0;
+}
+
+.bot-message::before {
+    content: '🤖'; /* Bot avatar */
+    font-size: 20px;
+}
+
+/* User message bubble on the right with avatar */
+.user-message {
+    background-color: crimson;
+    color: white;
+    align-self: flex-end;
+    border-radius: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.user-message::after {
+    content: '👤'; /* User avatar */
+    font-size: 20px;
+}
+
+/* Timestamp styling */
+.timestamp {
+    font-size: 10px;
+    color: #888;
+    margin-top: 2px;
+}
+/* Timestamp for user messages */
+.user-message .timestamp {
+    font-size: 12px;
+    color: #ddd;
+    text-align: right;
+    margin-top: 5px;
+    display: block; /* Display timestamp as a separate block */
+}
+
+/* Adjusting user message bubble to fit the timestamp */
+.user-message {
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 70%;
+    background-color: crimson;
+    color: white;
+    align-self: flex-end;
+    text-align: left;
+    margin: 5px;
+}
