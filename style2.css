@@ -727,3 +727,85 @@ p {
 	}
 }
 /* End  Media Query For Desktop */
+
+    /* Chatbot Icon */
+        #chatbot-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: crimson;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+        }
+
+        /* Chatbot Window */
+        #chatbot-window {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 300px;
+            max-height: 400px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+        }
+
+        /* Chatbot Header */
+        #chatbot-header {
+            background-color: pink;
+            color: white;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Chat Content */
+        #chat-content {
+            padding: 10px;
+            overflow-y: auto;
+            flex-grow: 1;
+            font-size: 14px;
+        }
+
+        /* Chat Input Area */
+
+        #chat-input {
+            display: flex;
+            border-top: 1px solid #ccc;
+        }
+
+        #message {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            font-size: 14px;
+        }
+
+        #send-btn {
+            padding: 10px;
+            background-color: pink;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        /* Utility Buttons */
+        #brightness-btn, #delete-btn {
+            cursor: pointer;
+            margin-left: 5px;
+        }
