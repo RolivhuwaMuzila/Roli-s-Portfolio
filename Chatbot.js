@@ -44,41 +44,37 @@ sendBtn.addEventListener('click', (event) => {
     if (message) {
         const userMessage = document.createElement('div');
         userMessage.classList.add('user-message', 'message');
-        userMessage.textContent = message;
-        
-        const timestamp = document.createElement('div');
-        timestamp.classList.add('timestamp');
-        timestamp.textContent = getCurrentTimestamp();
-        userMessage.appendChild(timestamp);
-
+        userMessage.innerHTML = `<div class="avatar">👤</div>
+                                  <div class="message-text">
+                                      ${message}
+                                      <div class="timestamp">${getCurrentTimestamp()}</div>
+                                  </div>`;
         chatContent.appendChild(userMessage);
         messageInput.value = '';
 
         // Create bot response based on user input
         const botResponse = document.createElement('div');
         botResponse.classList.add('bot-message', 'message');
+        botResponse.innerHTML = `<div class="avatar">🤖</div>
+                                 <div class="message-text">`;
 
         if (message.toLowerCase() === 'what is my name?') {
-            botResponse.textContent = `Your name is ${portfolioInfo.name}.`;
+            botResponse.innerHTML += `Your name is ${portfolioInfo.name}.`;
         } else if (message.toLowerCase() === 'how many pages does my portfolio have?') {
-            botResponse.textContent = `Your portfolio has ${portfolioInfo.pages} pages.`;
+            botResponse.innerHTML += `Your portfolio has ${portfolioInfo.pages} pages.`;
         } else if (message.toLowerCase() === 'what are my recent projects?') {
-            botResponse.textContent = `Your recent projects include: ${portfolioInfo.recentProjects.join(', ')}.`;
+            botResponse.innerHTML += `Your recent projects include: ${portfolioInfo.recentProjects.join(', ')}.`;
         } else if (message.toLowerCase() === 'what skills do i have?') {
-            botResponse.textContent = `Your skills include: ${portfolioInfo.skills.join(', ')}.`;
+            botResponse.innerHTML += `Your skills include: ${portfolioInfo.skills.join(', ')}.`;
         } else if (message.toLowerCase() === 'what is my education?') {
-            botResponse.textContent = `You hold a ${portfolioInfo.education}.`;
+            botResponse.innerHTML += `You hold a ${portfolioInfo.education}.`;
         } else if (message.toLowerCase() === 'where am i from?') {
-            botResponse.textContent = `You are from ${portfolioInfo.location}.`;
+            botResponse.innerHTML += `You are from ${portfolioInfo.location}.`;
         } else {
-            botResponse.textContent = "I'm here to help! Can you ask something else?";
+            botResponse.innerHTML += "I'm here to help! Can you ask something else?";
         }
 
-        const botTimestamp = document.createElement('div');
-        botTimestamp.classList.add('timestamp');
-        botTimestamp.textContent = getCurrentTimestamp();
-        botResponse.appendChild(botTimestamp);
-
+        botResponse.innerHTML += `<div class="timestamp">${getCurrentTimestamp()}</div></div>`;
         chatContent.appendChild(botResponse);
 
         // Scroll to bottom

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <title>My Website</title>
 </head>
 
@@ -326,21 +327,47 @@
 </div>
 
 <div id="chatbot-window">
-    <div id="chatbot-header">
-        <span>Shawty</span>
-        <div>
-            <span id="brightness-btn">🔆</span>
-            <span id="delete-btn">🗑️</span>
-        </div>
+  <div id="chatbot-header">
+    <span id="chatbot-header-icon">🤖</span> <!-- Bot icon -->
+    <span id="chatbot-header-text">Shawty</span>
+    <div class="header-buttons">
+      <span id="brightness-btn">🔆</span>
+      <span id="delete-btn">🗑️</span>
     </div>
-    <div id="chat-content">
-        <div class="bot-message message">Hey, my name is Shawty, how can I help you?</div>
+  </div>
+  <div id="chat-content">
+    <!-- Initial Bot Message -->
+    <div class="bot-message message">
+      <div class="avatar">🤖</div>
+      <div class="message-text">
+        Hey, my name is Shawty, how can I help you?
+        <div class="timestamp">10:45</div>
+      </div>
     </div>
-    <div id="chat-input">
-        <input type="text" id="message" placeholder="Type a message...">
-        <button id="send-btn">Send</button>
+
+    <!-- User Message Example -->
+    <div class="user-message message">
+      <div class="message-text">
+        Your message here
+        <div class="timestamp">10:46</div>
+      </div>
+      <div class="avatar">👤</div>
     </div>
+
+    <!-- Bot Message Example -->
+    <div class="bot-message message">
+      <div class="avatar">🤖</div>
+      <div class="message-text">
+        Bot's response here
+        <div class="timestamp">10:47</div>
+      </div>
+    </div>
+  </div>
+  <div id="chat-input">
+    <input type="text" id="message" placeholder="Type a message...">
+    <button id="send-btn">Send</button> <!-- Changed to a text button -->
+  </div>
 </div>
 
 <!-- Chatbot JavaScript -->
-<script src="chatbot.js"></script> <!-- Save your chatbot script as chatbot.js -->
+<script src="chatbot.js"></script>

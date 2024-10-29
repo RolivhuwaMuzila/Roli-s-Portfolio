@@ -728,7 +728,12 @@ p {
 }
 /* End  Media Query For Desktop */
 
-   /* Chatbot Icon */
+/* Apply Nunito font to entire chatbot */
+#chatbot-window, #chatbot-header, .message, #message, #send-btn {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Chatbot Icon */
 #chatbot-icon {
     position: fixed;
     bottom: 20px;
@@ -763,14 +768,38 @@ p {
 
 /* Chatbot Header */
 #chatbot-header {
-    background-color: pink;
+    background-color: crimson;
     color: white;
     padding: 10px;
     border-radius: 8px 8px 0 0;
     font-size: 16px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Bot icon and Shawty text centered and bold in crimson */
+#chatbot-header-icon {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+#chatbot-header-text {
+    font-weight: 700; /* Bold */
+    color: black;
+}
+
+/* Header Buttons */
+.header-buttons {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#brightness-btn, #delete-btn {
+    cursor: pointer;
 }
 
 /* Chat Content */
@@ -782,6 +811,58 @@ p {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+/* Message Bubbles */
+.message {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    justify-content: flex-start; /* Default to left alignment */
+}
+
+/* User message bubble */
+.user-message {
+    justify-content: flex-end; /* Align user messages to the right */
+}
+
+/* Bot message bubble */
+.bot-message .message-text {
+    background-color: #f1f0f0;
+    color: black;
+    border-radius: 20px 20px 20px 0;
+    padding: 10px;
+    max-width: 70%;
+    position: relative;
+}
+
+/* User message bubble */
+.user-message .message-text {
+    background-color: crimson;
+    color: white;
+    border-radius: 20px 20px 0 20px;
+    padding: 10px;
+    max-width: 70%;
+    position: relative;
+}
+
+/* Align the user avatar to the right */
+.user-message .avatar {
+    order: 1; /* Move the avatar to the end of the flex container */
+}
+
+/* Align the bot avatar to the left */
+.bot-message .avatar {
+    order: 0; /* Keep the bot avatar at the beginning */
+}
+
+/* Timestamp styling */
+.timestamp {
+    font-size: 10px;
+    color: black;
+    text-align: right;
+    margin-top: 5px;
 }
 
 /* Chat Input Area */
@@ -798,85 +879,17 @@ p {
 }
 
 #send-btn {
-    padding: 10px;
-    background-color: pink;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
+    background-color: crimson; /* Set the background color to crimson */
+    color: white;              /* Set the text color to white */
+    border: none;              /* Remove default border */
+    padding: 10px 15px;        /* Add some padding for better appearance */
+    border-radius: 5px;        /* Optional: add rounded corners */
+    cursor: pointer;           /* Change cursor to pointer on hover */
+    font-size: 16px;           /* Adjust font size if needed */
 }
 
-/* Utility Buttons */
-#brightness-btn, #delete-btn {
-    cursor: pointer;
-    margin-left: 5px;
+#send-btn:hover {
+    background-color: darkred; /* Change background color on hover for effect */
 }
 
-/* Message Bubbles */
-.message {
-    max-width: 70%;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 14px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
-/* Bot message bubble on the left with avatar */
-.bot-message {
-    background-color: #f1f0f0;
-    color: black;
-    align-self: flex-start;
-    border-radius: 20px 20px 20px 0;
-}
-
-.bot-message::before {
-    content: '🤖'; /* Bot avatar */
-    font-size: 20px;
-}
-
-/* User message bubble on the right with avatar */
-.user-message {
-    background-color: crimson;
-    color: white;
-    align-self: flex-end;
-    border-radius: 20px 20px 0 20px;
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.user-message::after {
-    content: '👤'; /* User avatar */
-    font-size: 20px;
-}
-
-/* Timestamp styling */
-.timestamp {
-    font-size: 10px;
-    color: #888;
-    margin-top: 2px;
-}
-/* Timestamp for user messages */
-.user-message .timestamp {
-    font-size: 12px;
-    color: #ddd;
-    text-align: right;
-    margin-top: 5px;
-    display: block; /* Display timestamp as a separate block */
-}
-
-/* Adjusting user message bubble to fit the timestamp */
-.user-message {
-    position: relative;
-    padding: 10px;
-    border-radius: 20px;
-    max-width: 70%;
-    background-color: crimson;
-    color: white;
-    align-self: flex-end;
-    text-align: left;
-    margin: 5px;
-}
