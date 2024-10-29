@@ -16,9 +16,22 @@ const portfolioInfo = {
         "Login Authentication",
         "Movie Recommend"
     ],
-    skills: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Python"],
-    education: "Bachelor of Science in Information Technology",
-    location: "Tshamulungwi, Limpopo Venda"
+    technicalSkills: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Python"],
+    softSkills: ["Communication", "Problem Solving", "Teamwork", "Adaptability"],
+    education: [
+        "Bachelor of Science in Information Technology",
+        "Diploma in Information Technology ",
+        "Matric"
+    ],
+    location: "Kagiso, krugersdorp, Gauteng",
+    contact: {
+        email: "rollymuzila@gmail.com",
+        phone: "123-456-7890", // Replace with actual phone number
+        socialMedia: {
+            linkedin: "https://linkedin.com/in/yourprofile",
+            instagram: "https://instagram.com/yourprofile"
+        }
+    }
 };
 
 // Toggle chatbot window visibility
@@ -37,10 +50,10 @@ function getCurrentTimestamp() {
     return now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 }
 
-// Send message functionality
+// Send message functionality with keyword detection
 sendBtn.addEventListener('click', (event) => {
     event.stopPropagation(); // Prevent click from closing the chatbot
-    const message = messageInput.value.trim();
+    const message = messageInput.value.trim().toLowerCase();
     if (message) {
         const userMessage = document.createElement('div');
         userMessage.classList.add('user-message', 'message');
@@ -58,18 +71,25 @@ sendBtn.addEventListener('click', (event) => {
         botResponse.innerHTML = `<div class="avatar">🤖</div>
                                  <div class="message-text">`;
 
-        if (message.toLowerCase() === 'what is my name?') {
+        // Check for keywords in the message
+        if (message.includes('name')) {
             botResponse.innerHTML += `Your name is ${portfolioInfo.name}.`;
-        } else if (message.toLowerCase() === 'how many pages does my portfolio have?') {
+        } else if (message.includes('pages')) {
             botResponse.innerHTML += `Your portfolio has ${portfolioInfo.pages} pages.`;
-        } else if (message.toLowerCase() === 'what are my recent projects?') {
+        } else if (message.includes('projects')) {
             botResponse.innerHTML += `Your recent projects include: ${portfolioInfo.recentProjects.join(', ')}.`;
-        } else if (message.toLowerCase() === 'what skills do i have?') {
-            botResponse.innerHTML += `Your skills include: ${portfolioInfo.skills.join(', ')}.`;
-        } else if (message.toLowerCase() === 'what is my education?') {
-            botResponse.innerHTML += `You hold a ${portfolioInfo.education}.`;
-        } else if (message.toLowerCase() === 'where am i from?') {
+        } else if (message.includes('technical skills')) {
+            botResponse.innerHTML += `Your technical skills include: ${portfolioInfo.technicalSkills.join(', ')}.`;
+        } else if (message.includes('soft skills')) {
+            botResponse.innerHTML += `Your soft skills include: ${portfolioInfo.softSkills.join(', ')}.`;
+        } else if (message.includes('education')) {
+            botResponse.innerHTML += `Your education includes: ${portfolioInfo.education.join(', ')}.`;
+        } else if (message.includes('location') || message.includes('from')) {
             botResponse.innerHTML += `You are from ${portfolioInfo.location}.`;
+        } else if (message.includes('contact')) {
+            botResponse.innerHTML += `You can be reached at: <br> Email: ${portfolioInfo.contact.email} <br> Phone: ${portfolioInfo.contact.phone} <br> LinkedIn: ${portfolioInfo.contact.socialMedia.linkedin} <br> Instagram: ${portfolioInfo.contact.socialMedia.instagram}`;
+        } else if (message.includes('certification')) {
+            botResponse.innerHTML += `Your certifications include: ${portfolioInfo.education.slice(1).join(', ')}.`; // List certifications if any
         } else {
             botResponse.innerHTML += "I'm here to help! Can you ask something else?";
         }
