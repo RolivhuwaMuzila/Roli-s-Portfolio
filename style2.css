@@ -764,6 +764,20 @@ p {
     display: none;
     flex-direction: column;
     overflow: hidden;
+    resize: both; /* Allows resizing */
+    overflow: auto; /* Adds scrollbars if content overflows */
+}
+
+/* Resize handle for better user experience */
+#chatbot-window::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+    background: crimson;
+    cursor: nwse-resize; /* Cursor indicates resize action */
 }
 
 /* Chatbot Header */
@@ -891,5 +905,3 @@ p {
 #send-btn:hover {
     background-color: darkred; /* Change background color on hover for effect */
 }
-
-

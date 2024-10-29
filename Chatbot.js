@@ -107,3 +107,36 @@ brightnessBtn.addEventListener('click', (event) => {
         brightnessBtn.textContent = '🌙';
     }
 });
+
+// Resizing functionality
+let isResizing = false;
+const resizeHandle = document.createElement('div'); // Create a resize handle
+resizeHandle.style.width = '10px';
+resizeHandle.style.height = '10px';
+resizeHandle.style.backgroundColor = 'transparent';
+resizeHandle.style.cursor = 'nwse-resize';
+resizeHandle.style.position = 'absolute';
+resizeHandle.style.bottom = '5px';
+resizeHandle.style.right = '5px';
+chatbotWindow.appendChild(resizeHandle);
+
+resizeHandle.addEventListener('mousedown', (event) => {
+    isResizing = true;
+});
+
+document.addEventListener('mouseup', () => {
+    isResizing = false; // Stop resizing
+});
+
+document.addEventListener('mousemove', (event) => {
+    if (isResizing) {
+        const newWidth = event.clientX - chatbotWindow.getBoundingClientRect().left;
+        const newHeight = event.clientY - chatbotWindow.getBoundingClientRect().top;
+        
+        // Ensure minimum size
+        if (newWidth > 200 && newHeight > 150) {
+            chatbotWindow.style.width = newWidth + 'px';
+            chatbotWindow.style.height = newHeight + 'px';
+        }
+    }
+});
