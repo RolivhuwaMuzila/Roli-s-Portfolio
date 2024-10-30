@@ -18,7 +18,7 @@ const portfolioInfo = {
         "Login Authentication",
     ],
     technicalSkills: ["Web Development", "Software Development", "HTML & CSS", "JavaScript"],
-    softSkills: ["Communication", "Teamwork", "Problem Solving","Time management"],
+    softSkills: ["Communication", "Teamwork", "Problem Solving", "Time management"],
     education: [
         "Bachelor of Science in Information Technology",
         "Diploma in Information Technology",
@@ -51,6 +51,14 @@ const portfolioInfo = {
 // Toggle chatbot window visibility
 chatbotIcon.addEventListener('click', () => {
     chatbotWindow.style.display = chatbotWindow.style.display === 'flex' ? 'none' : 'flex';
+    
+    // Apply the shake animation
+    chatbotIcon.classList.add('shake');
+
+    // Remove the shake class after animation ends to allow re-triggering
+    setTimeout(() => {
+        chatbotIcon.classList.remove('shake');
+    }, 500); // Match duration of the animation
 });
 
 // Prevent click events on input from closing the chatbot
@@ -69,6 +77,7 @@ sendBtn.addEventListener('click', (event) => {
     event.stopPropagation(); // Prevent click from closing the chatbot
     const message = messageInput.value.trim().toLowerCase();
     if (message) {
+        // Create user message
         const userMessage = document.createElement('div');
         userMessage.classList.add('user-message', 'message');
         userMessage.innerHTML = `<div class="avatar">👤</div>
@@ -86,7 +95,7 @@ sendBtn.addEventListener('click', (event) => {
                                  <div class="message-text">`;
 
         // Check for keywords in the message
-        if (message.includes('hey')) {
+        if (message.includes('hey') || message.includes('hi') || message.includes('hello') || message.includes('greeting')) {
             botResponse.innerHTML += "Hey there! 👋 How's it going? I’m here to help you dig into Rolly's portfolio—ask away, and let’s geek out together! 🚀💻";
         } else if (message.includes('name')) {
             botResponse.innerHTML += `Your name is ${portfolioInfo.name}.`;
@@ -113,6 +122,7 @@ sendBtn.addEventListener('click', (event) => {
         } else if (message.includes('social media')) {
             botResponse.innerHTML += `Find me on social media here: <br> LinkedIn: ${portfolioInfo.contact.socialMedia.linkedin} <br> Instagram: ${portfolioInfo.contact.socialMedia.instagram} <br> Facebook: ${portfolioInfo.contact.socialMedia.facebook} <br> GitHub: ${portfolioInfo.contact.socialMedia.github}`;
         } else {
+            // This is where the prompt will go for unrecognized messages
             botResponse.innerHTML += "Please contact me for more information!";
         }
 

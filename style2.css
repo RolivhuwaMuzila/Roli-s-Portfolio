@@ -728,6 +728,15 @@ p {
 }
 /* End  Media Query For Desktop */
 
+/* Shake animation */
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-2px, 0); }
+    50% { transform: translate(2px, 0); }
+    75% { transform: translate(-2px, 0); }
+    100% { transform: translate(0, 0); }
+}
+
 /* Apply Nunito font to entire chatbot */
 #chatbot-window, #chatbot-header, .message, #message, #send-btn {
     font-family: 'Nunito', sans-serif;
@@ -904,4 +913,9 @@ p {
 
 #send-btn:hover {
     background-color: darkred; /* Change background color on hover for effect */
+}
+
+/* Apply the shake animation to the icon */
+#chatbot-icon.shake {
+    animation: shake 0.5s ease-in-out;
 }
