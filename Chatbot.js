@@ -99,8 +99,8 @@ sendBtn.addEventListener('click', (event) => {
             botResponse.innerHTML += "Hey there! 👋 How's it going? I’m here to help you dig into Rolly's portfolio—ask away, and let’s geek out together! 🚀💻";
         } else if (message.includes('name')) {
             botResponse.innerHTML += `Your name is ${portfolioInfo.name}.`;
-        } else if (message.includes('about me')) {
-            botResponse.innerHTML += portfolioInfo.aboutMe;
+        }else if (message.includes('about me')) {
+                botResponse.innerHTML += `Kindly please <a href="#about" target="_self">click here</a> to view my About Me section in the portfolio.`;     
         } else if (message.includes('pages')) {
             botResponse.innerHTML += `Your portfolio has ${portfolioInfo.pages} pages.`;
         } else if (message.includes('projects')) {
