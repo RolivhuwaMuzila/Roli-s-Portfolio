@@ -86,7 +86,9 @@ sendBtn.addEventListener('click', (event) => {
                                  <div class="message-text">`;
 
         // Check for keywords in the message
-        if (message.includes('name')) {
+        if (message.includes('hey')) {
+            botResponse.innerHTML += "Hey there! 👋 How's it going? I’m here to help you dig into Rolly's portfolio—ask away, and let’s geek out together! 🚀💻";
+        } else if (message.includes('name')) {
             botResponse.innerHTML += `Your name is ${portfolioInfo.name}.`;
         } else if (message.includes('about me')) {
             botResponse.innerHTML += portfolioInfo.aboutMe;
@@ -111,7 +113,7 @@ sendBtn.addEventListener('click', (event) => {
         } else if (message.includes('social media')) {
             botResponse.innerHTML += `Find me on social media here: <br> LinkedIn: ${portfolioInfo.contact.socialMedia.linkedin} <br> Instagram: ${portfolioInfo.contact.socialMedia.instagram} <br> Facebook: ${portfolioInfo.contact.socialMedia.facebook} <br> GitHub: ${portfolioInfo.contact.socialMedia.github}`;
         } else {
-            botResponse.innerHTML += "Hey there! 👋 How's it going? I’m here to help you dig into Rolly's portfolio—ask away, and let’s geek out together! 🚀💻";
+            botResponse.innerHTML += "Please contact me for more information!";
         }
 
         botResponse.innerHTML += `<div class="timestamp">${getCurrentTimestamp()}</div></div>`;
@@ -180,4 +182,3 @@ document.addEventListener('mousemove', (event) => {
         }
     }
 });
-
