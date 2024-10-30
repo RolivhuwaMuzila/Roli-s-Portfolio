@@ -40,9 +40,9 @@ const portfolioInfo = {
         email: "rollymuzila@gmail.com",
         phone: "069 997 3153 / 072 017 6890",
         socialMedia: {
-            linkedin: "https://linkedin.com/in/RolivhuwaMuzila",
-            instagram: "https://instagram.com/rollym",
-            facebook: "https://facebook.com/RollyMuzila",
+            linkedin: "https://www.linkedin.com/in/rolivhuwa-muzila-bb13a5287/",
+            instagram: "https://www.instagram.com/_rolly.m/",
+            facebook: "https://www.facebook.com/RollyMuzila/",
             github: "https://github.com/RolivhuwaMuzila"
         }
     }
@@ -114,13 +114,34 @@ sendBtn.addEventListener('click', (event) => {
         } else if (message.includes('location') || message.includes('from')) {
             botResponse.innerHTML += `You are from ${portfolioInfo.location}.`;
         } else if (message.includes('contact')) {
-            botResponse.innerHTML += `You can be reached at: <br> Email: ${portfolioInfo.contact.email} <br> Phone: ${portfolioInfo.contact.phone} <br> LinkedIn: ${portfolioInfo.contact.socialMedia.linkedin} <br> Instagram: ${portfolioInfo.contact.socialMedia.instagram}`;
+            botResponse.innerHTML += `You can be reached at: <br> Email: ${portfolioInfo.contact.email} <br> Phone: ${portfolioInfo.contact.phone}`;
         } else if (message.includes('certification')) {
             botResponse.innerHTML += `Your certifications include: ${portfolioInfo.certification.join(', ')}.`;
         } else if (message.includes('experience')) {
             botResponse.innerHTML += `Your experience includes: ${portfolioInfo.experience.join(', ')}.`;
         } else if (message.includes('social media')) {
-            botResponse.innerHTML += `Find me on social media here: <br> LinkedIn: ${portfolioInfo.contact.socialMedia.linkedin} <br> Instagram: ${portfolioInfo.contact.socialMedia.instagram} <br> Facebook: ${portfolioInfo.contact.socialMedia.facebook} <br> GitHub: ${portfolioInfo.contact.socialMedia.github}`;
+            botResponse.innerHTML += `
+                Find me on social media here: <br>
+                <div class="social-item">
+                    <a href="${portfolioInfo.contact.socialMedia.linkedin}" target="_blank">
+                        <img src="https://img.icons8.com/bubbles/100/000000/linkedin.png" alt="LinkedIn" />
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a href="${portfolioInfo.contact.socialMedia.instagram}" target="_blank">
+                        <img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" alt="Instagram" />
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a href="${portfolioInfo.contact.socialMedia.facebook}" target="_blank">
+                        <img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" alt="Facebook" />
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a href="${portfolioInfo.contact.socialMedia.github}" target="_blank">
+                        <img src="https://img.icons8.com/bubbles/100/000000/github.png" alt="GitHub" />
+                    </a>
+                </div>`;
         } else {
             // This is where the prompt will go for unrecognized messages
             botResponse.innerHTML += "Please contact me for more information!";
@@ -184,11 +205,7 @@ document.addEventListener('mousemove', (event) => {
     if (isResizing) {
         const newWidth = event.clientX - chatbotWindow.getBoundingClientRect().left;
         const newHeight = event.clientY - chatbotWindow.getBoundingClientRect().top;
-        
-        // Ensure minimum size
-        if (newWidth > 200 && newHeight > 150) {
-            chatbotWindow.style.width = newWidth + 'px';
-            chatbotWindow.style.height = newHeight + 'px';
-        }
+        chatbotWindow.style.width = `${newWidth}px`;
+        chatbotWindow.style.height = `${newHeight}px`;
     }
 });
