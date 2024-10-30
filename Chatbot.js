@@ -9,27 +9,41 @@ const brightnessBtn = document.getElementById('brightness-btn');
 // Portfolio information
 const portfolioInfo = { 
     name: "Rolivhuwa Muzila",
+    surname: "Muzila",
     pages: 6,
+    aboutMe: "I'm a passionate software developer with a love for coding and technology. I enjoy solving problems and creating efficient solutions that make life easier for users.",
     recentProjects: [
         "Kitchen Bliss Website",
         "Tic-Tac-Toe game",
         "Login Authentication",
-        "Movie Recommend"
     ],
-    technicalSkills: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Python"],
-    softSkills: ["Communication", "Problem Solving", "Teamwork", "Adaptability"],
+    technicalSkills: ["Web Development", "Software Development", "HTML & CSS", "JavaScript"],
+    softSkills: ["Communication", "Teamwork", "Problem Solving","Time management"],
     education: [
         "Bachelor of Science in Information Technology",
-        "Diploma in Information Technology ",
+        "Diploma in Information Technology",
         "Matric"
     ],
-    location: "Kagiso, krugersdorp, Gauteng",
+    certification: [
+        "MS-900 Certificate",
+        "MD-102 Certificate",
+        "AI Certificate",
+        "Software Development Certificate",
+        "System Administration Certificate",
+    ],
+    experience: [
+        "Capaciti/Absa intern-current",
+        "Tender Office Administrator",
+    ],
+    location: "Kagiso, Krugersdorp, Gauteng",
     contact: {
         email: "rollymuzila@gmail.com",
-        phone: "123-456-7890", // Replace with actual phone number
+        phone: "069 997 3153 / 072 017 6890",
         socialMedia: {
-            linkedin: "https://linkedin.com/in/yourprofile",
-            instagram: "https://instagram.com/yourprofile"
+            linkedin: "https://linkedin.com/in/RolivhuwaMuzila",
+            instagram: "https://instagram.com/rollym",
+            facebook: "https://facebook.com/RollyMuzila",
+            github: "https://github.com/RolivhuwaMuzila"
         }
     }
 };
@@ -74,6 +88,8 @@ sendBtn.addEventListener('click', (event) => {
         // Check for keywords in the message
         if (message.includes('name')) {
             botResponse.innerHTML += `Your name is ${portfolioInfo.name}.`;
+        } else if (message.includes('about me')) {
+            botResponse.innerHTML += portfolioInfo.aboutMe;
         } else if (message.includes('pages')) {
             botResponse.innerHTML += `Your portfolio has ${portfolioInfo.pages} pages.`;
         } else if (message.includes('projects')) {
@@ -89,9 +105,13 @@ sendBtn.addEventListener('click', (event) => {
         } else if (message.includes('contact')) {
             botResponse.innerHTML += `You can be reached at: <br> Email: ${portfolioInfo.contact.email} <br> Phone: ${portfolioInfo.contact.phone} <br> LinkedIn: ${portfolioInfo.contact.socialMedia.linkedin} <br> Instagram: ${portfolioInfo.contact.socialMedia.instagram}`;
         } else if (message.includes('certification')) {
-            botResponse.innerHTML += `Your certifications include: ${portfolioInfo.education.slice(1).join(', ')}.`; // List certifications if any
+            botResponse.innerHTML += `Your certifications include: ${portfolioInfo.certification.join(', ')}.`;
+        } else if (message.includes('experience')) {
+            botResponse.innerHTML += `Your experience includes: ${portfolioInfo.experience.join(', ')}.`;
+        } else if (message.includes('social media')) {
+            botResponse.innerHTML += `Find me on social media here: <br> LinkedIn: ${portfolioInfo.contact.socialMedia.linkedin} <br> Instagram: ${portfolioInfo.contact.socialMedia.instagram} <br> Facebook: ${portfolioInfo.contact.socialMedia.facebook} <br> GitHub: ${portfolioInfo.contact.socialMedia.github}`;
         } else {
-            botResponse.innerHTML += "Hey there! 👋 How's it going? I’m here to help you dig into Rolly's portfolio—ask away, and let’s geek out together! 🚀💻?";
+            botResponse.innerHTML += "Hey there! 👋 How's it going? I’m here to help you dig into Rolly's portfolio—ask away, and let’s geek out together! 🚀💻";
         }
 
         botResponse.innerHTML += `<div class="timestamp">${getCurrentTimestamp()}</div></div>`;
@@ -160,3 +180,4 @@ document.addEventListener('mousemove', (event) => {
         }
     }
 });
+
