@@ -91,7 +91,7 @@ sendBtn.addEventListener('click', (event) => {
         } else if (message.includes('certification')) {
             botResponse.innerHTML += `Your certifications include: ${portfolioInfo.education.slice(1).join(', ')}.`; // List certifications if any
         } else {
-            botResponse.innerHTML += "I'm here to help! Can you ask something else?";
+            botResponse.innerHTML += "Hey there! 👋 How's it going? I’m here to help you dig into Rolly's portfolio—ask away, and let’s geek out together! 🚀💻?";
         }
 
         botResponse.innerHTML += `<div class="timestamp">${getCurrentTimestamp()}</div></div>`;
