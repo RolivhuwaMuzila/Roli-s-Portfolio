@@ -6,7 +6,19 @@ const chatContent = document.getElementById('chat-content');
 const deleteBtn = document.getElementById('delete-btn');
 const brightnessBtn = document.getElementById('brightness-btn');
 
-// Portfolio information
+// Hamburger menu functionality
+const hamburger = document.querySelector('.hamburger');
+const navList = document.querySelector('.nav-list ul');
+
+hamburger.addEventListener('click', () => {
+    // Toggle active class
+    hamburger.classList.toggle('active');
+    
+    // Toggle nav list visibility
+    navList.classList.toggle('active');
+});
+
+// Portfolio information (as defined earlier)
 const portfolioInfo = { 
     name: "Rolivhuwa Muzila",
     surname: "Muzila",

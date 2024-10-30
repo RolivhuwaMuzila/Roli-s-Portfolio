@@ -195,7 +195,20 @@ p {
 #header .hamburger.active .bar::after {
 	top: 0;
 }
-/* End Header section */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+	#header .nav-list ul {
+		left: 100%; /* Hide by default */
+	}
+	#header .nav-list ul.active {
+		left: 0%; /* Show when active */
+	}
+	#header .nav-list ul a {
+		font-size: 2rem; /* Smaller font on mobile */
+	}
+}
+
 
 /* Hero Section */
 #hero {
