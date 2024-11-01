@@ -1,3 +1,15 @@
+// Select the header by its ID
+const shawtyHeader = document.getElementById('chatbot-header-text');
+
+// Create a new element for the "online" text
+const onlineStatus = document.createElement('div');
+onlineStatus.textContent = 'online';
+onlineStatus.style.fontSize = '0.8em';
+onlineStatus.style.color = 'green';
+
+// Append the "online" status under the header
+shawtyHeader.appendChild(onlineStatus);
+
 const chatbotIcon = document.getElementById('chatbot-icon');
 const chatbotWindow = document.getElementById('chatbot-window');
 const sendBtn = document.getElementById('send-btn');
@@ -111,8 +123,8 @@ sendBtn.addEventListener('click', (event) => {
             botResponse.innerHTML += "Hey there! 👋 How's it going? I’m here to help you dig into Rolly's portfolio—ask away, and let’s geek out together! 🚀💻";
         } else if (message.includes('name')) {
             botResponse.innerHTML += `Your name is ${portfolioInfo.name}.`;
-        }else if (message.includes('about me')) {
-                botResponse.innerHTML += `Kindly please <a href="#about" target="_self">click here</a> to view my About Me section in the portfolio.`;     
+        } else if (message.includes('about me')) {
+            botResponse.innerHTML += `Kindly please <a href="#about" target="_self">click here</a> to view my About Me section in the portfolio.`;     
         } else if (message.includes('pages')) {
             botResponse.innerHTML += `Your portfolio has ${portfolioInfo.pages} pages.`;
         } else if (message.includes('projects')) {
@@ -189,9 +201,10 @@ brightnessBtn.addEventListener('click', (event) => {
         chatbotWindow.style.backgroundColor = 'black';
         chatbotWindow.style.color = 'white';
         isDarkMode = true;
-        brightnessBtn.textContent = '🌙';
+        brightnessBtn.textContent = '🔅';
     }
 });
+
 
 // Resizing functionality
 let isResizing = false;
