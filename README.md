@@ -1,6 +1,6 @@
 # My Website 🎉
 
-Welcome to my personal website repository! This project showcases my journey and skills as a web and software developer. 🌟
+Welcome to my personal website repository! This project showcases my journey and skills as a web and software developer. 🌟  
 
 ---
 
@@ -29,7 +29,8 @@ This website is designed to serve as a portfolio and a resume for **Rolivhuwa Mu
 - **Interactive Sections**: Includes **About Me**, **Skills**, **Education**, **Experience**, **Projects**, and **Contact Information**.  
 - **Downloadable Resume**: Link provided to download my resume.  
 - **Projects Showcase**: Displays recent projects with descriptions and GitHub repository links.  
-- **Chatbot**: Features a chatbot on every page (except the homepage) with the following functionalities:  
+- **Interactive Chatbot**: A chatbot is included on every page (except the homepage), allowing users to:  
+  - **Search Information**: Use the chatbot to search for any information related to me on the portfolio.  
   - **Send Button**: Submit queries.  
   - **Brightness Button**: Adjust visibility.  
   - **Delete Button**: Clear chat history.  
@@ -92,8 +93,10 @@ Here are some recent projects featured on the website:
 
 ## 📬 Contact
 
-Feel free to reach out via:    
+Feel free to reach out via:  
+
 - **Email**: [rolivhuwamuzila@gmail.com](mailto:rolivhuwamuzila@gmail.com)  
+ 
 
 ---
 
