@@ -195,7 +195,20 @@ p {
 #header .hamburger.active .bar::after {
 	top: 0;
 }
-/* End Header section */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+	#header .nav-list ul {
+		left: 100%; /* Hide by default */
+	}
+	#header .nav-list ul.active {
+		left: 0%; /* Show when active */
+	}
+	#header .nav-list ul a {
+		font-size: 2rem; /* Smaller font on mobile */
+	}
+}
+
 
 /* Hero Section */
 #hero {
@@ -285,6 +298,7 @@ p {
 }
 #about .col-right p {
 	margin-bottom: 20px;
+	
 }
 #about .col-right .cta {
 	color: black;
@@ -726,3 +740,196 @@ p {
 	}
 }
 /* End  Media Query For Desktop */
+
+/* Shake animation */
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-2px, 0); }
+    50% { transform: translate(2px, 0); }
+    75% { transform: translate(-2px, 0); }
+    100% { transform: translate(0, 0); }
+}
+
+/* Apply Nunito font to entire chatbot */
+#chatbot-window, #chatbot-header, .message, #message, #send-btn {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Chatbot Icon */
+#chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: crimson;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+/* Chatbot Window */
+#chatbot-window {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    resize: both; /* Allows resizing */
+    overflow: auto; /* Adds scrollbars if content overflows */
+}
+
+/* Resize handle for better user experience */
+#chatbot-window::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+    background: crimson;
+    cursor: nwse-resize; /* Cursor indicates resize action */
+}
+
+/* Chatbot Header */
+#chatbot-header {
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Bot icon and Shawty text centered and bold in crimson */
+#chatbot-header-icon {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+#chatbot-header-text {
+    font-weight: 700; /* Bold */
+    color: black;
+}
+
+/* Header Buttons */
+.header-buttons {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#brightness-btn, #delete-btn {
+    cursor: pointer;
+}
+
+/* Chat Content */
+#chat-content {
+    padding: 10px;
+    overflow-y: auto;
+    flex-grow: 1;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Message Bubbles */
+.message {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    justify-content: flex-start; /* Default to left alignment */
+}
+
+/* User message bubble */
+.user-message {
+    justify-content: flex-end; /* Align user messages to the right */
+}
+
+/* Bot message bubble */
+.bot-message .message-text {
+    background-color: #f1f0f0;
+    color: black;
+    border-radius: 20px 20px 20px 0;
+    padding: 10px;
+    max-width: 70%;
+    position: relative;
+}
+
+/* User message bubble */
+.user-message .message-text {
+    background-color: crimson;
+    color: white;
+    border-radius: 20px 20px 0 20px;
+    padding: 10px;
+    max-width: 70%;
+    position: relative;
+}
+
+/* Align the user avatar to the right */
+.user-message .avatar {
+    order: 1; /* Move the avatar to the end of the flex container */
+}
+
+/* Align the bot avatar to the left */
+.bot-message .avatar {
+    order: 0; /* Keep the bot avatar at the beginning */
+}
+
+/* Timestamp styling */
+.timestamp {
+    font-size: 10px;
+    color: black;
+    text-align: right;
+    margin-top: 5px;
+}
+
+/* Chat Input Area */
+#chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+#message {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+}
+
+#send-btn {
+    background-color: crimson; /* Set the background color to crimson */
+    color: white;              /* Set the text color to white */
+    border: none;              /* Remove default border */
+    padding: 10px 15px;        /* Add some padding for better appearance */
+    border-radius: 5px;        /* Optional: add rounded corners */
+    cursor: pointer;           /* Change cursor to pointer on hover */
+    font-size: 16px;           /* Adjust font size if needed */
+}
+
+#send-btn:hover {
+    background-color: darkred; /* Change background color on hover for effect */
+}
+
+/* Apply the shake animation to the icon */
+#chatbot-icon.shake {
+    animation: shake 0.5s ease-in-out;
+}
+

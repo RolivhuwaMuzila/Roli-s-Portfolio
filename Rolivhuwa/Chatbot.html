@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        /* Chatbot Icon */
+        #chatbot-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: pink;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+        }
+
+        /* Chatbot Window */
+        #chatbot-window {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 300px;
+            max-height: 400px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+        }
+
+        /* Chatbot Header */
+        #chatbot-header {
+            background-color: pink;
+            color: white;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Chat Content */
+        #chat-content {
+            padding: 10px;
+            overflow-y: auto;
+            flex-grow: 1;
+            font-size: 14px;
+        }
+
+        /* Chat Messages */
+        .message {
+            padding: 8px 12px;
+            border-radius: 10px;
+            margin: 5px 0;
+            max-width: 70%;
+            font-size: 14px;
+        }
+
+        .user-message {
+            background-color: crimson;
+            color: white;
+            align-self: flex-end;
+            text-align: right;
+        }
+
+        .bot-message {
+            background-color: white;
+            color: black;
+            align-self: flex-start;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+
+        /* Chat Input Area */
+        #chat-input {
+            display: flex;
+            border-top: 1px solid #ccc;
+        }
+
+        #message {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            font-size: 14px;
+        }
+
+        #send-btn {
+            padding: 10px;
+            background-color: pink;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        /* Utility Buttons */
+        #brightness-btn, #delete-btn {
+            cursor: pointer;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Chatbot Icon -->
+<div id="chatbot-icon">💬</div>
+
+<!-- Chatbot Window -->
+<div id="chatbot-window">
+    <div id="chatbot-header">
+        <span>Shanty</span>
+        <div>
+            <span id="brightness-btn">🔆</span>
+            <span id="delete-btn">🗑️</span>
+        </div>
+    </div>
+    <div id="chat-content">
+        <div class="bot-message message">Hey, my name is Shanty, how can I help you?</div>
+    </div>
+    <div id="chat-input">
+        <input type="text" id="message" placeholder="Type a message...">
+        <button id="send-btn">Send</button>
+    </div>
+</div>
+
+<script>
+    // Select elements
+    const chatbotIcon = document.getElementById('chatbot-icon');
+    const chatbotWindow = document.getElementById('chatbot-window');
+    const sendBtn = document.getElementById('send-btn');
+    const messageInput = document.getElementById('message');
+    const chatContent = document.getElementById('chat-content');
+    const deleteBtn = document.getElementById('delete-btn');
+    const brightnessBtn = document.getElementById('brightness-btn');
+
+    // Toggle Chatbot Window
+    chatbotIcon.addEventListener('click', () => {
+        chatbotWindow.style.display = chatbotWindow.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    // Send message
+    sendBtn.addEventListener('click', () => {
+        const message = messageInput.value.trim();
+        if (message) {
+            // User Message
+            const userMessage = document.createElement('div');
+            userMessage.classList.add('user-message', 'message');
+            userMessage.textContent = message;
+            chatContent.appendChild(userMessage);
+
+            // Clear input
+            messageInput.value = '';
+
+            // Bot Response
+            const botResponse = document.createElement('div');
+            botResponse.classList.add('bot-message', 'message');
+            botResponse.textContent = "I'm here to help!";
+            chatContent.appendChild(botResponse);
+
+            // Scroll to bottom
+            chatContent.scrollTop = chatContent.scrollHeight;
+        }
+    });
+
+    // Delete chat content
+    deleteBtn.addEventListener('click', () => {
+        chatContent.innerHTML = '<div class="bot-message message">Hey, my name is Shanty, how can I help you?</div>';
+    });
+
+    // Toggle brightness mode
+    let isDarkMode = false;
+    brightnessBtn.addEventListener('click', () => {
+        if (isDarkMode) {
+            chatbotWindow.style.backgroundColor = 'white';
+            chatbotWindow.style.color = 'black';
+            isDarkMode = false;
+            brightnessBtn.textContent = '🔆';
+        } else {
+            chatbotWindow.style.backgroundColor = 'black';
+            chatbotWindow.style.color = 'white';
+            isDarkMode = true;
+            brightnessBtn.textContent = '🌙';
+        }
+    });
+</script>
+
+</body>
+</html>
