@@ -234,3 +234,10 @@ document.addEventListener('mousemove', (event) => {
         chatbotWindow.style.height = `${newHeight}px`;
     }
 });
+
+function toggleInfo(id) {
+    const info = document.getElementById(id);
+    if (info) {
+      info.style.display = info.style.display === "block" ? "none" : "block";
+    }
+  }
