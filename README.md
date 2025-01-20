@@ -58,7 +58,7 @@ To run this project locally, follow these steps:
    ```bash
    cd My-Website
    ```
-3. Open `Rolly's portfolio.html` in your preferred web browser.
+3. Open `index.html` in your preferred web browser.
 
 ---
 
