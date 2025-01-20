@@ -108,7 +108,7 @@ This project is open source and available under the **MIT License**.
 
 🎉 **Thank you for visiting my portfolio!** If you have any questions or would like to collaborate, don't hesitate to get in touch.  
 
-🔗 **Deployment Link**: [My Website](https://rollymuzila.github.io/My-Website)  
+🔗 **Deployment Link**: [My personal portfolio Website](https://rolivhuwamuzila.github.io/Roli-s-Portfolio/)  
 
 Happy exploring! 🌟
 Feel free to modify any part of this as needed!
