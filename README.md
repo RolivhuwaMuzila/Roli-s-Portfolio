@@ -26,16 +26,30 @@ This website is designed to serve as a portfolio and a resume for **Rolivhuwa Mu
 - **Interactive Sections**: Includes About Me, Skills, Education, Experience, Projects, and Contact Information.  
 - **Downloadable Resume**: Link provided to download my resume.  
 - **Projects Showcase**: Displays recent projects with descriptions and GitHub repository links.  
-- **Interactive Chatbot**:  
-  - A **pink chatbot** is available at the bottom right corner of each page (except the homepage).  
-  - You can ask it anything related to my portfolio — such as my **name**, **skills**, **about me**, etc.  
-  - Features include:  
-    - **Search Information**  
-    - **Send Button** for queries  
-    - **Brightness Button** to adjust visibility  
-    - **Delete Button** to clear chat  
-    - **Resize Feature** to change size  
+Interactive Pink Chatbot:
 
+A pink chatbot is available at the bottom-right corner of every page (except the homepage).
+
+💬 What can it do?
+You can ask it anything about my portfolio — for example:
+
+"What’s your name?"
+
+"What skills do you have?"
+
+"Tell me about your education"
+
+"What projects have you built?"
+
+🛠️ Chatbot Features:
+
+Send Button: Submit your query
+
+Brightness Button: Adjust the visibility of the chat window
+
+Delete Button: Clear the chat history
+
+Resize Feature: Resize the chatbot to your liking
 ---
 
 ## 🖼️ Portfolio Preview
