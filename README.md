@@ -1,19 +1,16 @@
-# My Website 🎉
+# My Website 🎉 
 
-Welcome to my personal website repository! This project showcases my journey and skills as a web and software developer. 🌟  
+Welcome to my personal website repository! This project showcases my journey and skills as a web and software developer. 🌟
 
----
-
-## 📜 Table of Contents
-
-- [Overview](#overview)  
-- [Features](#features)  
-- [Technologies Used](#technologies-used)  
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [Projects](#projects)  
-- [Contact](#contact)  
-- [License](#license)  
+📜 **Table of Contents**
+- Overview  
+- Features  
+- Technologies Used  
+- Installation  
+- Usage  
+- Projects  
+- Contact  
+- License  
 
 ---
 
@@ -26,15 +23,26 @@ This website is designed to serve as a portfolio and a resume for **Rolivhuwa Mu
 ## ✨ Features
 
 - **Responsive Design**: Mobile-friendly and adjusts to different screen sizes.  
-- **Interactive Sections**: Includes **About Me**, **Skills**, **Education**, **Experience**, **Projects**, and **Contact Information**.  
+- **Interactive Sections**: Includes About Me, Skills, Education, Experience, Projects, and Contact Information.  
 - **Downloadable Resume**: Link provided to download my resume.  
 - **Projects Showcase**: Displays recent projects with descriptions and GitHub repository links.  
-- **Interactive Chatbot**: A chatbot is included on every page (except the homepage), allowing users to:  
-  - **Search Information**: Use the chatbot to search for any information related to me on the portfolio.  
-  - **Send Button**: Submit queries.  
-  - **Brightness Button**: Adjust visibility.  
-  - **Delete Button**: Clear chat history.  
-  - **Resize Feature**: Change the chatbot size.
+- **Interactive Chatbot**:  
+  - A **pink chatbot** is available at the bottom right corner of each page (except the homepage).  
+  - You can ask it anything related to my portfolio — such as my **name**, **skills**, **about me**, etc.  
+  - Features include:  
+    - **Search Information**  
+    - **Send Button** for queries  
+    - **Brightness Button** to adjust visibility  
+    - **Delete Button** to clear chat  
+    - **Resize Feature** to change size  
+
+---
+
+## 🖼️ Portfolio Preview
+
+Here's a quick visual idea of what my portfolio looks like:
+
+![Portfolio Screenshot](./c3cd0717-a947-42d9-8252-fa162f87fcfd.png)
 
 ---
 
@@ -53,8 +61,10 @@ To run this project locally, follow these steps:
 1. Clone the repository:  
    ```bash
    git clone https://github.com/RolivhuwaMuzila/My-Website.git
-   ```
-2. Navigate to the project directory:  
+````
+
+2. Navigate to the project directory:
+
    ```bash
    cd My-Website
    ```
@@ -68,16 +78,18 @@ Once opened, you can navigate through the sections using the navigation bar at t
 
 ### Running on VS Code 🖥️
 
-1. Open the project folder in VS Code:  
+1. Open the project folder in VS Code:
+
    ```bash
    code .
    ```
-2. Install the **Live Server** extension from the Extensions Marketplace.  
-3. Start the project by right-clicking on `Rolly's portfolio.html` and selecting **Open with Live Server**. This will launch the site in your default web browser.  
-4. To debug JavaScript:  
-   - Open the **Run and Debug** panel on the left sidebar.  
-   - Select **Run and Debug** and choose **Chrome** (or another browser) as your environment.  
-   - Set breakpoints and step through your code in real-time.  
+2. Install the **Live Server** extension from the Extensions Marketplace.
+3. Start the project by right-clicking on `Rolly's portfolio.html` and selecting **Open with Live Server**.
+4. To debug JavaScript:
+
+   * Open the **Run and Debug** panel on the left sidebar.
+   * Select **Run and Debug** and choose **Chrome** (or another browser) as your environment.
+   * Set breakpoints and step through your code in real-time.
 
 ---
 
@@ -85,30 +97,30 @@ Once opened, you can navigate through the sections using the navigation bar at t
 
 Here are some recent projects featured on the website:
 
-- **Kitchen Bliss Website**: An e-commerce website for kitchen essentials, built with HTML, CSS, and JavaScript.  
-- **Tic Tac Toe Game**: A classic Tic Tac Toe game, enhancing my skills in JavaScript and UI design.  
-- **Login Authentication**: A secure login system showcasing form validation and user feedback.
+* **Kitchen Bliss Website**: An e-commerce website for kitchen essentials, built with HTML, CSS, and JavaScript.
+* **Capacity Leaving System**: A web-based application that allows users to apply for leave, built with functionality for form submission and approval tracking.
+* **Rolly’s To-Do List**: A sleek and simple to-do list app that helps users manage tasks effectively.
 
 ---
 
 ## 📬 Contact
 
-Feel free to reach out via:  
-
-- **Email**: [rolivhuwamuzila@gmail.com](mailto:rolivhuwamuzila@gmail.com)  
- 
+Feel free to reach out via:
+📧 **Email**: [rolivhuwamuzila@gmail.com](mailto:rolivhuwamuzila@gmail.com)
 
 ---
 
 ## 📄 License
 
-This project is open source and available under the **MIT License**.  
+This project is open source and available under the **MIT License**.
 
 ---
 
-🎉 **Thank you for visiting my portfolio!** If you have any questions or would like to collaborate, don't hesitate to get in touch.  
+🎉 **Thank you for visiting my portfolio!** If you have any questions or would like to collaborate, don't hesitate to get in touch.
 
-🔗 **Deployment Link**: [My personal portfolio Website](https://rolivhuwamuzila.github.io/Roli-s-Portfolio/)  
+🔗 **Deployment Link**: [My personal portfolio Website](#)
 
-Happy exploring! 🌟
-Feel free to modify any part of this as needed!
+**Happy exploring! 🌟**
+
+```
+
