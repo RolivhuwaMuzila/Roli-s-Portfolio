@@ -1,138 +1,149 @@
-# My Website 🎉 
+# 🎉 My Website – Rolivhuwa Muzila's Portfolio
 
-Welcome to my personal website repository! This project showcases my journey and skills as a web and software developer. 🌟
+Welcome to my personal website repository! This project highlights my journey as a passionate **web and software developer**, showcasing my education, skills, and creative work. 🌟
 
-📜 **Table of Contents**
-- Overview  
-- Features  
-- Technologies Used  
-- Installation  
-- Usage  
-- Projects  
-- Contact  
-- License  
+---
+
+## 📚 Table of Contents
+
+* [Overview](#-overview)
+* [Features](#-features)
+* [Technologies Used](#-technologies-used)
+* [Installation](#-installation)
+* [Usage](#-usage)
+* [Projects](#-projects)
+* [Contact](#-contact)
+* [License](#-license)
 
 ---
 
 ## 📖 Overview
 
-This website is designed to serve as a portfolio and a resume for **Rolivhuwa Muzila**, a dedicated web developer with a strong background in Information Technology. It highlights my education, skills, and recent projects. 🚀
+This website serves as both a **portfolio** and a **digital resume** for me, Rolivhuwa Muzila. I'm a dedicated web developer with a strong foundation in **Information Technology**. The site offers a clean and responsive interface to explore who I am, what I’ve built, and how to contact me.
 
 ---
 
 ## ✨ Features
 
-- **Responsive Design**: Mobile-friendly and adjusts to different screen sizes.  
-- **Interactive Sections**: Includes About Me, Skills, Education, Experience, Projects, and Contact Information.  
-- **Downloadable Resume**: Link provided to download my resume.  
-- **Projects Showcase**: Displays recent projects with descriptions and GitHub repository links.  
-- **Interactive Pink Chatbot: A pink chatbot is available at the bottom-right corner of every page (except the homepage).
+* **Responsive Design** – Works beautifully across mobile, tablet, and desktop devices.
+* **Interactive Sections** – Explore About Me, Skills, Education, Experience, Projects, and Contact pages.
+* **Downloadable Resume** – Quick access to download my CV.
+* **Projects Showcase** – Each project includes a brief description and a link to the GitHub repo.
+* **Interactive Pink Chatbot** – Ask the chatbot questions about me and my work. It’s available on every page *except* the homepage.
 
-- **💬 What can it do?
-- **You can ask it anything about my portfolio — for example:
+### 💬 Chatbot Capabilities
 
-- **"What’s your name?"
+Ask things like:
 
-- **"What skills do you have?"
+* “What’s your name?”
+* “What skills do you have?”
+* “Tell me about your education.”
+* “What projects have you built?”
 
-- **"Tell me about your education"
+#### 🛠️ Chatbot Features:
 
-- **"What projects have you built?"
+* **Send Button** – Submit your message
+* **Brightness Toggle** – Adjust chat visibility
+* **Delete Button** – Clear chat history
+* **Resizable** – Customize the chatbot size
 
-## 🛠️ Chatbot Features:
-
-- **Send Button: Submit your query
-
-- **Brightness Button: Adjust the visibility of the chat window
-
-- **Delete Button: Clear the chat history
-
-- **Resize Feature: Resize the chatbot to your liking
 ---
 
 ## 🖼️ Portfolio Preview
 
-Here's a quick visual idea of what my portfolio looks like:
+Here's a preview of how the portfolio looks:
 
-![Portfolio Screenshot](./c3cd0717-a947-42d9-8252-fa162f87fcfd.png)
+![Portfolio Screenshot](./portfolio%20screenshot.PNG)
 
 ---
 
 ## 🛠️ Technologies Used
 
-- HTML  
-- CSS  
-- JavaScript  
+* HTML
+* CSS
+* JavaScript
 
 ---
 
 ## ⚙️ Installation
 
-To run this project locally, follow these steps:
+To run this project locally:
 
-1. Clone the repository:  
+1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/RolivhuwaMuzila/My-Website.git
-````
+   ```
 
-2. Navigate to the project directory:
+2. **Navigate to the project directory:**
 
    ```bash
    cd My-Website
    ```
-3. Open `index.html` in your preferred web browser.
+
+3. **Open the project:**
+
+   Open `index.html` in your preferred browser, or follow the steps below for VS Code.
 
 ---
 
 ## 💻 Usage
 
-Once opened, you can navigate through the sections using the navigation bar at the top. The site provides detailed information about my background, skills, projects, and contact details.
+Once opened, use the **navigation bar** to browse all sections.
 
-### Running on VS Code 🖥️
+### Running on VS Code
 
-1. Open the project folder in VS Code:
+1. Open the folder in VS Code:
 
    ```bash
    code .
    ```
-2. Install the **Live Server** extension from the Extensions Marketplace.
-3. Start the project by right-clicking on `Rolly's portfolio.html` and selecting **Open with Live Server**.
+
+2. Install the **Live Server** extension.
+
+3. Right-click `Rolly's portfolio.html` and select **"Open with Live Server"**.
+
 4. To debug JavaScript:
 
-   * Open the **Run and Debug** panel on the left sidebar.
-   * Select **Run and Debug** and choose **Chrome** (or another browser) as your environment.
-   * Set breakpoints and step through your code in real-time.
+   * Go to the **Run and Debug** tab.
+   * Choose your browser environment (e.g., Chrome).
+   * Set breakpoints and debug with ease.
 
 ---
 
 ## 🚀 Projects
 
-Here are some recent projects featured on the website:
+Here are a few projects featured on my website:
 
-* **Kitchen Bliss Website**: An e-commerce website for kitchen essentials, built with HTML, CSS, and JavaScript.
-* **Capacity Leaving System**: A web-based application that allows users to apply for leave, built with functionality for form submission and approval tracking.
-* **Rolly’s To-Do List**: A sleek and simple to-do list app that helps users manage tasks effectively.
+* **Kitchen Bliss Website** – A responsive e-commerce website for kitchen essentials using HTML, CSS, and JavaScript.
+* **Capacity Leaving System** – A leave application system with form submissions and approval tracking.
+* **Rolly’s To-Do List** – A minimalist to-do list application for task management.
 
 ---
 
 ## 📬 Contact
 
-Feel free to reach out via:
-📧 **Email**: [rolivhuwamuzila@gmail.com](mailto:rolivhuwamuzila@gmail.com)
+Feel free to connect with me:
+
+📧 Email: [rolivhuwamuzila@gmail.com](mailto:rolivhuwamuzila@gmail.com)
+
+---
+
+## 🔗 Deployment
+
+Visit the live site here:
+**[My Live Portfolio](https://roli-s-portfolio-serc-ajd3yocoq-rolivhuwamuzilas-projects.vercel.app/)**
 
 ---
 
 ## 📄 License
 
-This project is open source and available under the **MIT License**.
+This project is licensed under the **MIT License**.
 
 ---
 
-🎉 **Thank you for visiting my portfolio!** If you have any questions or would like to collaborate, don't hesitate to get in touch.
+🎉 **Thank you for visiting my portfolio!**
+If you have any questions, suggestions, or collaboration ideas — I’d love to hear from you.
 
-🔗 **Deployment Link**: [(https://roli-s-portfolio-kd26-74fdz61xw-rolivhuwamuzilas-projects.vercel.app/)](#)
-
-**Happy exploring! 🌟**
-
-```
+**Happy Exploring! 🌟**
 
