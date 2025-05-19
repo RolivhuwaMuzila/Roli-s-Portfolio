@@ -1,4 +1,4 @@
-# 🎉 My Website – Rolivhuwa Muzila's Portfolio
+# 🎉 My Website – Rolivhuwa Muzila's Portfolio.
 
 Welcome to my personal website repository! This project highlights my journey as a passionate **web and software developer**, showcasing my education, skills, and creative work. 🌟
 
@@ -101,7 +101,7 @@ Once opened, use the **navigation bar** to browse all sections.
 
 2. Install the **Live Server** extension.
 
-3. Right-click `Rolly's portfolio.html` and select **"Open with Live Server"**.
+3. Right-click `Index.html` and select **"Open with Live Server"**.
 
 4. To debug JavaScript:
 
