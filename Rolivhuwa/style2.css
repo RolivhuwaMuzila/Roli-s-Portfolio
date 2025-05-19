@@ -485,6 +485,19 @@ p {
 }
 
 /* contact Section */
+.contact-info a {
+  color: crimson;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #a10d2f; /* Slightly darker crimson for hover */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
@@ -557,11 +570,11 @@ p {
 	margin: 0 5px;
 }
 #footer .social-item img {
-	filter: grayscale(1);
+	filter: crimsonscale(1);
 	transition: 0.3s ease filter;
 }
 #footer .social-item:hover img {
-	filter: grayscale(0);
+	filter: crimsonscale(0);
 }
 #footer p {
 	color: white;
@@ -932,4 +945,3 @@ p {
 #chatbot-icon.shake {
     animation: shake 0.5s ease-in-out;
 }
-
