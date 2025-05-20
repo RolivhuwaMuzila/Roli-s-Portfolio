@@ -335,168 +335,97 @@ p {
 
 /* Skills Section */
 .skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 80px 20px;
-  border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .skills-header h1 {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 40px;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 .skills-content {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  width: 100%;
-  max-width: 1200px;
+	display: flex;
+	justify-content: center; /* Center the skills content */
+	gap: 50px; /* Add spacing between technical and soft skills */
+	width: 100%;
+	max-width: 1200px; /* Set a maximum width for the content */
 }
 
-.technical-skills,
-.soft-skills {
-  width: 40%;
-  color: black;
-  background: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  padding: 20px;
-  transition: transform 0.3s ease;
-}
-
-.technical-skills:hover,
-.soft-skills:hover {
-  transform: translateY(-5px);
-}
-
-.technical-skills h2,
-.soft-skills h2 {
-  text-align: center;
-  margin-bottom: 25px;
-  color: crimson;
-  font-weight: bold;
-}
-
-.skill {
-  margin-bottom: 20px;
-}
-
-.skill h3 {
-  font-size: 16px;
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #333;
+.technical-skills, .soft-skills {
+	width: 40%; /* Adjust the width for better centering */
+	color: black;
 }
 
 .skill-bar {
-  background-color: #e0e0e0;
-  border-radius: 10px;
-  overflow: hidden;
-  height: 12px;
+	background-color: #e0e0e0;
+	border-radius: 4px;
+	overflow: hidden;
+	margin-bottom: 15px;
 }
 
 .skill-level {
-  background-color: crimson;
-  height: 100%;
-  border-radius: 10px;
-  /* Remove animation */
+	background-color: crimson;
+	height: 20px;
+	border-radius: 5px;
+}
+
+.technical-skills h2, .soft-skills h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.skill {
+	margin-bottom: 10px;
 }
 
 /* End Skills Section */
 
 /* Education-Experience Section */
 .education-experience {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 100px 20px;
-  background-color: #f9f9f9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 20px;
+	background-color: #f9f9f9;
 }
 
 .education-experience-header h1 {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 50px;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 50px;
 }
 
 .education-experience-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1000px;
-  gap: 30px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 800px;
 }
 
-.card {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 25px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  width: 30%;
-  transition: transform 0.3s ease;
+.education, .experience, .certifications {
+	width: 30%;
+	text-align: left; /* Aligning the text and list items to the left */
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.education h2, .experience h2, .certifications h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: crimson;
 }
 
-.card h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: crimson;
+.education ul, .experience ul, .certifications ul {
+	list-style-type: disc; /* Adding bullet points */
+	padding-left: 20px; /* Adding left padding for better alignment of bullet points */
 }
 
-.card ul {
-  list-style-type: disc;
-  padding-left: 20px;
+.education ul li, .experience ul li, .certifications ul li {
+	font-size: 16px;
+	margin-bottom: 10px;
+	color: #333;
 }
-
-.card ul li {
-  font-size: 16px;
-  margin-bottom: 10px;
-  color: #333;
-  line-height: 1.5;
-}
-
-/* Responsive Design */
-@media (max-width: 900px) {
-  .education-experience-content {
-    flex-direction: column;
-    align-items: center;
-  }
-  .card {
-    width: 90%;
-  }
-}
-.card {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeInUp 0.6s ease-out forwards;
-}
-
-.card:nth-child(1) {
-  animation-delay: 0.2s;
-}
-.card:nth-child(2) {
-  animation-delay: 0.4s;
-}
-.card:nth-child(3) {
-  animation-delay: 0.6s;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* End Education-Experience Section */
 
 /* Projects section */
@@ -563,22 +492,8 @@ p {
 .hidden-info a:hover {
     text-decoration: underline;
 }
-/*End project Section */
 
 /* contact Section */
-.contact-info a {
-  color: crimson;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.contact-info a:hover {
-  color: #a10d2f; /* Slightly darker crimson for hover */
-  text-decoration: underline;
-  cursor: pointer;
-}
-
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
@@ -651,11 +566,11 @@ p {
 	margin: 0 5px;
 }
 #footer .social-item img {
-	filter: crimsonscale(1);
+	filter: grayscale(1);
 	transition: 0.3s ease filter;
 }
 #footer .social-item:hover img {
-	filter: crimsonscale(0);
+	filter: grayscale(0);
 }
 #footer p {
 	color: white;
@@ -1026,3 +941,4 @@ p {
 #chatbot-icon.shake {
     animation: shake 0.5s ease-in-out;
 }
+
