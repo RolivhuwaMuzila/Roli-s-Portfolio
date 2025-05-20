@@ -136,12 +136,6 @@ Visit the live site here:
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License**.
-
----
-
 🎉 **Thank you for visiting my portfolio!**
 If you have any questions, suggestions, or collaboration ideas — I’d love to hear from you.
 
