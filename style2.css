@@ -289,16 +289,18 @@ p {
 }
 #about .col-right {
 	width: 100%;
+	color: #111; /* Darker font for all text in col-right */
 }
 #about .col-right h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	margin-bottom: 10px;
+	color: #111; /* Optional: ensures h2 is dark too */
 }
 #about .col-right p {
 	margin-bottom: 20px;
-	
+	color: #111; /* Darker font for paragraphs */
 }
 #about .col-right .cta {
 	color: black;
@@ -321,6 +323,13 @@ p {
 	width: 98%;
 	border: 7px solid crimson;
 	z-index: -1;
+}
+#about .col-right,
+#about .col-right h1,
+#about .col-right h2,
+#about .col-right p,
+#about .col-right .cta {
+  color: #111 !important;
 }
 /* End About Section */
 
