@@ -1,80 +1,149 @@
-# My Website
+# 🎉 My Website – Rolivhuwa Muzila's Portfolio.
 
-Welcome to my personal website repository! This project showcases my journey and skills as a web and software developer.
+Welcome to my personal website repository! This project highlights my journey as a passionate **web and software developer**, showcasing my education, skills, and creative work. 🌟
 
-## Table of Contents
-- Overview
-- Features
-- Technologies Used
-- Installation
-- Usage
-- Projects
-- Contact
-- License
+---
 
-## Overview
-This website is designed to serve as a portfolio and a resume for Rolivhuwa Muzila, a dedicated web developer with a strong background in Information Technology. It highlights my education, skills, and recent projects.
+## 📚 Table of Contents
 
-## Features
-- **Responsive Design**: The website is mobile-friendly and adjusts to different screen sizes.
-- **Interactive Sections**: Includes sections for About Me, Skills, Education, Experience, Projects, and Contact Information.
-- **Downloadable Resume**: A link to download my resume is provided.
-- **Projects Showcase**: Displays recent projects with descriptions and links to GitHub repositories.
-- **Chatbot**: Each page (except the home page) features a chatbot that works with keywords, allowing users to ask about my information in the portfolio. The chatbot includes:
-  - **Send Button**: To submit queries.
-  - **Brightness Button**: To adjust the chatbot's visibility.
-  - **Delete Button**: To clear the chat history.
-  - **Resize Feature**: Allows users to change the size of the chatbot.
+* [Overview](#-overview)
+* [Features](#-features)
+* [Technologies Used](#-technologies-used)
+* [Installation](#-installation)
+* [Usage](#-usage)
+* [Projects](#-projects)
+* [Contact](#-contact)
+* [License](#-license)
 
-## Technologies Used
-- HTML
-- CSS
-- JavaScript
+---
 
-## Installation
-To run this project locally, follow these steps:
+## 📖 Overview
 
-1. Clone the repository:
+This website serves as both a **portfolio** and a **digital resume** for me, Rolivhuwa Muzila. I'm a dedicated web developer with a strong foundation in **Information Technology**. The site offers a clean and responsive interface to explore who I am, what I’ve built, and how to contact me.
+
+---
+
+## ✨ Features
+
+* **Responsive Design** – Works beautifully across mobile, tablet, and desktop devices.
+* **Interactive Sections** – Explore About Me, Skills, Education, Experience, Projects, and Contact pages.
+* **Downloadable Resume** – Quick access to download my CV.
+* **Projects Showcase** – Each project includes a brief description and a link to the GitHub repo.
+* **Interactive Pink Chatbot** – Ask the chatbot questions about me and my work. It’s available on every page *except* the homepage.
+
+### 💬 Chatbot Capabilities
+
+Ask things like:
+
+* “What’s your name?”
+* “What skills do you have?”
+* “Tell me about your education.”
+* “What projects have you built?”
+
+#### 🛠️ Chatbot Features:
+
+* **Send Button** – Submit your message
+* **Brightness Toggle** – Adjust chat visibility
+* **Delete Button** – Clear chat history
+* **Resizable** – Customize the chatbot size
+
+---
+
+## 🖼️ Portfolio Preview
+
+Here's a preview of how the portfolio looks:
+
+![Portfolio Screenshot](./portfolio%20screenshot.PNG)
+
+---
+
+## 🛠️ Technologies Used
+
+* HTML
+* CSS
+* JavaScript
+
+---
+
+## ⚙️ Installation
+
+To run this project locally:
+
+1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/RolivhuwaMuzila/My-Website.git
    ```
-2. Navigate to the project directory:
+
+2. **Navigate to the project directory:**
+
    ```bash
    cd My-Website
    ```
-3. Open `Rolly's portfolio.html` in your preferred web browser.
 
-## Usage
-Once opened, you can navigate through the sections using the navigation bar at the top. The site provides information about my background, skills, and projects, along with contact details.
+3. **Open the project:**
 
-### Running on VS Code:
-To run and debug the project using Visual Studio Code:
+   Open `index.html` in your preferred browser, or follow the steps below for VS Code.
 
-1. Open the project folder in VS Code:
+---
+
+## 💻 Usage
+
+Once opened, use the **navigation bar** to browse all sections.
+
+### Running on VS Code
+
+1. Open the folder in VS Code:
+
    ```bash
    code .
    ```
-2. Install the Live Server extension from the Extensions Marketplace.
-3. Start the project by right-clicking on the `Rolly's portfolio.html` file and selecting "Open with Live Server." This will automatically launch the site in your default web browser.
 
-To debug JavaScript, open the Run and Debug panel on the left sidebar, then select "Run and Debug," and choose Chrome (or another browser) as your environment. This allows you to set breakpoints and step through your code in real-time.
+2. Install the **Live Server** extension.
 
-## Projects
-Here are some recent projects featured on the website:
-- **Kitchen Bliss Website**: An e-commerce website for kitchen essentials built with HTML, CSS, and JavaScript.
-- **Tic Tac Toe Game**: A classic Tic Tac Toe game, enhancing my skills in JavaScript and UI design.
-- **Login Authentication**: A secure login system showcasing form validation and user feedback.
+3. Right-click `Index.html` and select **"Open with Live Server"**.
 
-## Contact
-Feel free to reach out via:
-- Phone: 069 997 3153 | 072 017 6890
-- Email: rollymuzila@gmail.com | rolivhuwamuzila@gmail.com
-- Address: Kagiso, Krugersdorp, South Africa
+4. To debug JavaScript:
 
-## License
-This project is open source and available under the MIT License.
+   * Go to the **Run and Debug** tab.
+   * Choose your browser environment (e.g., Chrome).
+   * Set breakpoints and debug with ease.
 
-Thank you for visiting my portfolio! If you have any questions or would like to collaborate, don't hesitate to get in touch.
+---
 
-Feel free to modify any part of this as needed!
+## 🚀 Projects
+
+Here are a few projects featured on my website:
+
+* **Kitchen Bliss Website** – A responsive e-commerce website for kitchen essentials using HTML, CSS, and JavaScript.
+* **Capacity Leaving System** – A leave application system with form submissions and approval tracking.
+* **Rolly’s To-Do List** – A minimalist to-do list application for task management.
+
+---
+
+## 📬 Contact
+
+Feel free to connect with me:
+
+📧 Email: [rolivhuwamuzila@gmail.com](mailto:rolivhuwamuzila@gmail.com)
+
+---
+
+## 🔗 Deployment
+
+Visit the live site here:
+**[My Live Portfolio](https://roli-s-portfolio-serc-r9cwcoxev-rolivhuwamuzilas-projects.vercel.app/)**
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+🎉 **Thank you for visiting my portfolio!**
+If you have any questions, suggestions, or collaboration ideas — I’d love to hear from you.
+
+**Happy Exploring! 🌟**
 
